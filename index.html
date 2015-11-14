@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>How To Directives</title>
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css"/>
+  <link rel="stylesheet" href="css/app.css"/>
+  
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/angular-material/angular-material.min.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/lodash/lodash.min.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/services/userDataService.js"></script>
+  <script src="js/controllers/mainCtrl.js"></script>
+  <script src="js/directives/bert-user.js"></script>
+  <script src="js/directives/stop-event-bubbling.js"></script>
+  <!--<script src=""></script>-->
+</head>
+<body ng-controller="mainCtrl">
+  <div class="md-whiteframe-14dp main-app" ng-click="sayHi()">
+    <div ng-repeat="fooUser in vm.users">
+      <bert-user user-object="fooUser"></bert-user>
+    </div>
+  </div>
+</body>
+</html>

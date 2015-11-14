@@ -1,0 +1,14 @@
+<div class="user" stop-event-bubbling>
+  <div class="inline-block pic-container">
+    <img ng-src="{{userObject.picture.thumbnail}}" alt="{{userObject.name.first}} {{userObject.name.last}}"/>
+  </div>
+  <div class="inline-block info-container">
+    <div class="name">{{userObject.name.first}} {{userObject.name.last}}</div>
+    <div class="email">{{userObject.email}}</div>
+    <div class="location">
+      <span class="city">{{userObject.location.city}},</span>
+      <span class="state">{{userObject.location.state}}</span>
+      <span class="zip" ng-click="blah()">{{userObject.location.zip}}</span>
+    </div>
+  </div>
+</div>

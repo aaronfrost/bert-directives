@@ -1,0 +1,38 @@
+body{
+  padding: 30px;
+
+  .main-app{
+    padding:20px;
+  }
+}
+
+.user{
+  margin: 5px 0;
+
+  .name{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .email{
+    font-size:12px;
+  }
+
+  .location{
+    font-size: 10px;
+  }
+  img{
+    height: 40px;
+  }
+
+  .info-container{
+    vertical-align: top;
+  }
+}
+
+
+
+
+//OOCSS
+.inline-block{
+  display: inline-block;
+}
